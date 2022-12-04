@@ -15,7 +15,7 @@ class ToDoModel {
         resolve(this.state);
       });
   }
-  postToDo(toDo: ToDo, resolve: Function): void {
+  postToDo(toDo: Partial<ToDo>, resolve: Function): void {
     fetch("https://jsonplaceholder.typicode.com/todos", {
       method: "POST",
       body: JSON.stringify(toDo),

@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+#root {
+  margin-top: 100px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  border-radius: 7px;
+}
+
+.title {
+  height: 20px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  width: 85%;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.container:first-child {
+  margin-top: 10px;
+}
+.checkbox {
+  height: 16px;
+  width: 16px;
+  margin-right: 20px;
+}
+
+.buttonsContainer {
+  height: 20px;
+}
+
+.edit {
+  margin-right: 10px;
+  background: #fff;
+  border: none;
+}
+.delete {
+  background: #fff;
+  border: none;
+}
+.edit:hover,
+.delete:hover {
+  border: 1px solid grey;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+}
+
+.containerForm {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.inputForm{
+  width: 400px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.buttonForm{}
+.buttonForm:hover{
+  cursor: pointer;
+}

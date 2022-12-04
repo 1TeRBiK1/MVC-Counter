@@ -14,7 +14,7 @@ class ToDoController {
       this.model.getToDo(resolve);
     });
   }
-  postToDo(toDo: ToDo): Promise<ToDo> {
+  postToDo(toDo: Partial<ToDo>): Promise<ToDo> {
     return new Promise((resolve) => {
       this.model.postToDo(toDo, resolve);
     });
